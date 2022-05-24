@@ -19,7 +19,6 @@ make sure python3 is installed in your computer
 ```bash
 python3 -m venv venv
 ```
-<br>
 ```bash
 source venv/bin/activate
 ```

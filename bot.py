@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from to import Token
+import links
 import time
 
 file = open('schedule.txt')
@@ -74,15 +75,15 @@ async def on_message(message):
                     await message.channel.send(f"{j[1]} in {j[0]}at {j[2]}")
 
     if message.content.startswith('$resources'):
-        link = 'https://drive.google.com/drive/folders/1m5orJ4toWhjMmbQsje_znq7B_gbUoZ-z?usp=sharing'
+        link = links.resource_link
         await message.channel.send(link)
 
     if message.content.startswith('$lecture'):
-        zoom = 'https://uci.zoom.us/j/97605655948?pwd=WmhQK3NNQ01tSFZWVG92Nk9oTmdYZz09'
+        zoom = links.zoom_lec
         await message.channel.send(f"zoom link to lecture is {zoom}. Password is DeBug")
     
     if message.content.startswith('$oh'):
-        oh = 'https://uci.zoom.us/j/98545919153'
+        oh = links.oh_link
         await message.channel.send(f"zoom link to office hours: {oh}")
     
     

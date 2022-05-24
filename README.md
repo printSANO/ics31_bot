@@ -4,6 +4,10 @@
 ## **Discord Bot for ICS31**
 
 ## Getting Started
+make sure python3 is installed in your computer
 
+1. clone the repasitory from github into IDE
+
+2. install necessary requirements from requirements.txt
 <br/>
 

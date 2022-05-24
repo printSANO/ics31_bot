@@ -3,7 +3,7 @@ from discord.ext import commands
 from to import Token
 import time
 
-file = open('/Users/ryan/dev/ics31/chrome_extension/schedule.txt')
+file = open('schedule.txt')
 lines = file.readlines()
 file.close()
 

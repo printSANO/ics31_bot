@@ -23,7 +23,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 <br>
-3. install necessary requirements from requirements.txt in venv
+3. Install necessary requirements from requirements.txt in venv
 <br>
 
 ```python
@@ -32,7 +32,10 @@ pip3 install -r requirements.txt
 <br>
 now you will see (venv) before your user name in terminal
 <br>
-4. Run bot.py
+4. Create to.py file inside the repasitory with token = ('token of discord developer'). Token can be found in discord developer profile
+> ex. token = 'iqdneodonqo'
+<br>
+5. Run bot.py
 <br>
 
 ```python

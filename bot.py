@@ -4,7 +4,7 @@ from to import Token
 import links
 import time
 
-file = open('schedule.txt')
+file = open('scheduled.txt')
 lines = file.readlines()
 file.close()
 

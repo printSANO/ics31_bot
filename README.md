@@ -6,11 +6,11 @@
 ## Getting Started
 make sure python3 is installed in your computer
 
-1. clone the repasitory from github into IDE
+1. clone the repository from github into IDE
 
 2. Activate virtual environment
     <br>
-    A. go in to the folder in which you cloned the repasitory
+    A. go in to the folder in which you cloned the repository
     <br>
     B. type the command below into your terminal to create a virtual environment. It will create a folder "venv"
     <br>
@@ -32,7 +32,7 @@ pip3 install -r requirements.txt
 <br>
 now you will see (venv) before your user name in terminal
 <br>
-4. Create to.py file inside the repasitory with token = ('token of discord developer'). Token can be found in discord developer profile
+4. Create to.py file inside the repository with token = ('token of discord developer'). Token can be found in discord developer profile
 
 > ex. token = 'iqdneodonqo'
 

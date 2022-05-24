@@ -25,7 +25,7 @@ source venv/bin/activate
 <br>
 3. install necessary requirements from requirements.txt in venv
 <br>
-```bash
+```python
 pip3 install -r requirements.txt
 ```
 <br>
@@ -33,7 +33,7 @@ now you will see (venv) before your user name in terminal
 <br>
 4. Run bot.py
 <br>
-```bash
+```python
 python3 bot.py
 ```
 <br/>

@@ -11,22 +11,22 @@ make sure python3 is installed in your computer
 2. Activate virtual environment
     a.go in to the folder in which you cloned the repasitory
     b. type the command below into your terminal to create a virtual environment. It will create a folder "venv"
-'''bash
+```bash
 python3 -m venv venv
-'''
+```
     c. Activate your venv
-'''bash
+```bash
 source venv/bin/activate
-'''
+```
 
 3. install necessary requirements from requirements.txt in venv
-'''bash
+```bash
 pip3 install -r requirements.txt
-'''
+```
     now you will see (venv) before your user name in terminal
 4. Run bot.py
-'''bash
+```bash
 python3 bot.py
-'''
+```
 <br/>
 

@@ -33,7 +33,9 @@ pip3 install -r requirements.txt
 now you will see (venv) before your user name in terminal
 <br>
 4. Create to.py file inside the repasitory with token = ('token of discord developer'). Token can be found in discord developer profile
+
 > ex. token = 'iqdneodonqo'
+
 <br>
 5. Run bot.py
 <br>

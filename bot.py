@@ -27,7 +27,6 @@ def check_time():
 def bot_command():
     line = f"Bot Commands: \n\n**$help** : list of bot commands\n\n**$due** : check assignments due\n\n**$full_schedule** : check full schedule\n\n**$resources** : check resources\n\n**$lecture** : Link to zoom lecture and password"
     return line
-
 @bot.event
 async def on_ready():
     print('Connecting ')

@@ -14,11 +14,11 @@ make sure python3 is installed in your computer
     <br>
     B. type the command below into your terminal to create a virtual environment. It will create a folder "venv"
     <br>
+    C. Activate venv
+    <br>
 ```bash
 python3 -m venv venv
 ```
-<br>
-    C. Activate your venv
 <br>
 ```bash
 source venv/bin/activate

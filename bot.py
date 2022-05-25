@@ -8,7 +8,7 @@ file = open('scheduled.txt')
 lines = file.readlines()
 file.close()
 
-bot=commands.Bot(command_prefix='./')
+bot=commands.Bot(command_prefix='$')
 
 def check_time():
     """month,day,hr,min"""

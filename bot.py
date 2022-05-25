@@ -26,7 +26,7 @@ def check_time():
 
 
 def bot_command():
-    line = f"Bot Commands: \n\n**$help** : list of bot commands\n\n**$due** : check assignments due\n\n**$full_schedule** : check full schedule\n\n**$resources** : check resources\n\n**$lecture** : Link to zoom lecture and password\n\n**$oh** : Office hour zoom link"
+    line = f"Bot Commands: \n\n**$help** : list of bot commands\n\n**$due** : check assignments due\n\n**$full_schedule** : check full schedule\n\n**$resources** : check resources\n\n**$lecture** : Link to zoom lecture and password\n\n**$office_hour** : Office hour zoom link"
     return line
 @bot.event
 async def on_ready():
@@ -82,9 +82,12 @@ async def on_message(message):
         zoom = links.zoom_lec
         await message.channel.send(f"zoom link to lecture is {zoom}. Password is DeBug")
     
-    if message.content.startswith('$oh'):
+    if message.content.startswith('$office_hour'):
         oh = links.oh_link
         await message.channel.send(f"zoom link to office hours: {oh}")
+    if message.content.startswith('$ohhhhhh'):
+        oh = links.oh_link
+        await message.channel.send(f"https://c.tenor.com/Yjx_r38x1aYAAAAd/mind-blown-explosion.gif")
     
     
 bot.run(Token)

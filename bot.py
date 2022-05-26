@@ -34,9 +34,9 @@ async def on_ready():
     print(f"Connecting to {bot.user.name} BOT")
     print('Connection Success')
     await bot.change_presence(status=discord.Status.online, activity=None)
-@bot.event
-async def initial_message():
-    print("Bot Commands")
+#@bot.event
+#async def initial_message():
+#    print("Bot Commands")
 @bot.event
 async def on_message(message):
     if message.author == bot.user:
@@ -88,6 +88,11 @@ async def on_message(message):
     if message.content.startswith('$ohhhhhh'):
         oh = links.oh_link
         await message.channel.send(f"https://c.tenor.com/Yjx_r38x1aYAAAAd/mind-blown-explosion.gif")
-    
-    
+
+
+@bot.event
+async def mine(message):
+    if message.content.startswith('$mine'):
+        await message.channel.send("link")
+
 bot.run(Token)

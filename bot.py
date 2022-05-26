@@ -91,9 +91,8 @@ async def on_message(message):
 
     if message.content.lower() in ("$peter", "$petr"):
         petr = read_n_pick_petr("./petr/petrs.csv")
-        github_url = "https://github.com/printSANO/ics31_bot/petr/"
-        image_suffix = "?raw=true"
-        await message.channel.send(f"{github_url}{petr}{image_suffix}")
+        github_url = "https://raw.githubusercontent.com/printSANO/ics31_bot/main/petr/"
+        await message.channel.send(f"{github_url}{petr}")
     
     
 bot.run(Token)

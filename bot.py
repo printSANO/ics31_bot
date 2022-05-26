@@ -3,6 +3,7 @@ from discord.ext import commands
 from to import Token
 import links
 import time
+from petr.return_a_petr import read_n_pick_petr
 
 file = open('scheduled.txt')
 lines = file.readlines()
@@ -86,8 +87,12 @@ async def on_message(message):
         oh = links.oh_link
         await message.channel.send(f"zoom link to office hours: {oh}")
     if message.content.startswith('$ohhhhhh'):
-        oh = links.oh_link
         await message.channel.send(f"https://c.tenor.com/Yjx_r38x1aYAAAAd/mind-blown-explosion.gif")
+
+    if message.content.lower() in ("$peter", "$petr"):
+        petr = read_n_pick_petr("./petr/petrs.csv")
+        github_url = "https://github.com/printSANO/ics31_bot/petr/"
+        await message.channel.send(f"{github_url}{petr}")
     
     
 bot.run(Token)

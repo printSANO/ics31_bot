@@ -93,6 +93,11 @@ async def on_message(message):
         grade = links.grade_link
         await message.channel.send(f"Link to grade estimator: {grade}")
 
+    if message.content.startswith('$lakers'):
+        await message.channel.send(f"Lakers in 5!\n")
+        await message.channel.send('https://tenor.com/view/snoop-dogg-lakers-dance-gif-21628249')
+
+
     if message.content.lower() in ("$peter", "$petr"):
         petr = read_n_pick_petr("./petr/petrs.csv")
         github_url = "https://github.com/printSANO/ics31_bot/petr/"

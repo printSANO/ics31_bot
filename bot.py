@@ -27,7 +27,7 @@ def check_time():
 
 
 def bot_command():
-    line = f"Bot Commands: \n\n**$help** : list of bot commands\n\n**$due** : check assignments due\n\n**$full_schedule** : check full schedule\n\n**$resources** : check resources\n\n**$lecture** : Link to zoom lecture and password\n\n**$office_hour** : Office hour zoom link"
+    line = f"Bot Commands: \n\n**$help** : list of bot commands\n\n**$due** : check assignments due\n\n**$full_schedule** : check full schedule\n\n**$resources** : check resources\n\n**$lecture** : Link to zoom lecture and password\n\n**$office_hour** : Office hour zoom link\n\n**$grade** : Link to grade estimator"
     return line
 @bot.event
 async def on_ready():
@@ -88,6 +88,10 @@ async def on_message(message):
         await message.channel.send(f"zoom link to office hours: {oh}")
     if message.content.startswith('$ohhhhhh'):
         await message.channel.send(f"https://c.tenor.com/Yjx_r38x1aYAAAAd/mind-blown-explosion.gif")
+    
+    if message.content.startswith('$grade'):
+        grade = links.grade_link
+        await message.channel.send(f"Link to grade estimator: {grade}")
 
     if message.content.lower() in ("$peter", "$petr"):
         petr = read_n_pick_petr("./petr/petrs.csv")

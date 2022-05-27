@@ -71,7 +71,9 @@ async def on_message(message):
             l = j[2].split(":")
             month1 = k[0]
             day1 = k[1]
-            if int(month1) >= int(month2):
+            if int(month1) > int(month2):
+                await message.channel.send(f"{j[1]} in {j[0]} at {j[2]}")
+            if int(month1) == int(month2):
                 if int(day1) >= int(day2):
                     await message.channel.send(f"{j[1]} in {j[0]} at {j[2]}")
 

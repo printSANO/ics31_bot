@@ -2,6 +2,7 @@ to.py
 .DS_Store
 __pycache__/
 links.py
+venv
 
 final_exam.txt
 lab_exam.txt

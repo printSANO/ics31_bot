@@ -1,18 +1,2 @@
-# aiohttp>=3.7.4.post0
-# async-timeout==3.0.1
-# attrs==21.4.0
-# certifi==2021.10.8
-# chardet==4.0.0
 discord.py==1.7.3
-# distlib==0.3.4
-# filelock==3.4.2
-# idna==3.3
-# multidict==6.0.2
-# numpy==1.22.3
-# pipenv==2022.5.2
-# platformdirs==2.4.1
-# six==1.16.0
-# typing_extensions==4.1.1
-# virtualenv==20.13.0
-# virtualenv-clone==0.5.7
-# yarl==1.7.2
+canvasapi
